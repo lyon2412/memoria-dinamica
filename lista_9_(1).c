@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define N 10
-
 int i=0, j=0;
 void ingresar(char *x);
 void ordenar(char *x);
@@ -15,11 +14,9 @@ c = (char*)malloc(N*sizeof(char));
 	c = (char*) realloc(c,(i+1)*sizeof(char));
 	ordenar(c);
 	printf("%s\n",c);
-
-
 }
-void ingresar(char *x){
 
+void ingresar(char *x){
 	char ch;
 	printf("ingrese numeros naturales:\n");
 	while((ch=getchar())!='-'){
@@ -45,10 +42,3 @@ void ordenar(char *x){
 		}
 	}		
 }
-		
-	
-	
-	
-	
-	
-	
